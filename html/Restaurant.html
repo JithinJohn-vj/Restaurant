@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Restaurant</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            border: 1px solid rgb(248, 233, 233);
+            position: sticky;
+            position: fixed;
+            width: 100%;
+            z-index: 50;
+            background: white;
+        }
+
+        .img {
+            padding-top: 0px;
+            height: 80px;
+            width: 80px;
+            padding-left: 50px;
+        }
+
+        .lines {
+            height: 30px;
+            width: 30px;
+            padding-bottom: 18px;
+            padding-left: 1200px;
+        }
+
+        .circle {
+            border-radius: 50%;
+            padding-top: 50px;
+            width: 600px;
+            height: 600px;
+            opacity: 0.9;
+        }
+
+        .sect1 {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 30px;
+        }
+
+        h3 {
+            border: 2px solid whitesmoke;
+            padding-top: 15px;
+            height: 25px;
+            width: 250px;
+            padding-left: 50px;
+            background-color: rgb(40, 218, 40);
+            text-align: center;
+        }
+
+        .sub1 {
+            padding-top: 180px;
+        }
+
+        h1 {
+            padding-top: 30px;
+        }
+
+        .btn1 {
+            width: 100px;
+            height: 40px;
+            background-color: rgb(200, 64, 11);
+            padding-top: 10px;
+        }
+
+        p {
+            height: 50px;
+            width: 500px;
+            padding-top: 20px;
+        }
+
+
+        .sect2,
+        .sect4,
+        .sect3 {
+            display: flex;
+            justify-content: space-around;
+            margin-left: 50px;
+            padding-top: 50px;
+
+        }
+
+        .off1,
+        .off2,
+        .off3 {
+            border: 0px solid whitesmoke;
+            width: 255px;
+            height: 70px;
+            padding: 10px;
+            transition: 0.2s ease-in-out;
+        }
+
+        .off1:hover,
+        .off2:hover,
+        .off3:hover {
+            /* border: 3px solid whitesmoke; */
+            transition: 0.2s ease-in-out;
+            box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.5);
+        }
+
+        .line {
+            width: 90%;
+            margin-left: 80px;
+            margin-top: 50px;
+            color: black;
+        }
+
+        .image1,
+        .image2,
+        .image3,
+        .image4 {
+            height: 300px;
+            width: 300px;
+        }
+
+        .btn2 {
+            width: 100px;
+            height: 40px;
+            background-color: rgb(53, 224, 53);
+            border: 0;
+            margin-left: 700px;
+            margin-top: 50px;
+        }
+
+        .icons {
+            padding-right: 100px;
+        }
+
+        .ima {
+            padding-left: 50px;
+            width: 150px;
+            height: 150px;
+            border-radius: 70%;
+
+        }
+
+        .sect4 {
+            background-color: rgb(8, 7, 7);
+            color: white;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .grid_img {
+            border-radius: 10px;
+            transition: 0.2s ease-in-out;
+            width: 100%;
+            height: 100%;
+        }
+
+        .grid_img:hover {
+            transform: scale(1.05);
+            transition: 0.2s ease-in-out;
+        }
+
+        .grid {
+            display: grid;
+            gap: 10px;
+            padding: 100px;
+            grid-template-areas:
+                "I1 I1 I2 I3"
+                "I1 I1 I2 I7"
+                "I4 I5 I6 I7";
+        }
+
+        .item1 {
+            grid-area: I1;
+        }
+
+        .item2 {
+            grid-area: I2;
+        }
+
+        .item3 {
+            grid-area: I3;
+        }
+
+        .item4 {
+            grid-area: I4;
+        }
+
+        .item5 {
+            grid-area: I5;
+        }
+
+        .item6 {
+            grid-area: I6;
+        }
+
+        .item7 {
+            grid-area: I7;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            margin: 50px 0;
+            align-items: center;
+        }
+
+        .menu,
+        .tag {
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="#"><img src="/images/hotgrilllogo.jpg" class="img"></a>
+            <a href="#"><img src="/images/four-lines.png" class="lines"></a>
+        </div>
+        <div class="sect1">
+            <div class="img1">
+                <img src="/images/seafood.webp" class="circle">
+            </div>
+            <div class="sub1">
+                <h3> 50% Off On All Items</h3>
+                <h1>ENJOY YOUR<br> DELICIOUS FOOD</h1>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam adipisci omnis iusto debitis est velit
+                    laborum voluptatibus ea nihil sit?</P><br>
+                <input type="button" value="Explore Now" class="btn1">
+            </div>
+        </div>
+        <div class="sect2">
+            <div class="off1">
+                <img src="/images/coupon.png" style="height: 80px;width: 80px; float: left;">
+                <p><b>Discount Voucher</b> <br>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="off2">
+                <img src="/images/bask.jpeg" style="height: 80px;width: 80px; float: left;">
+                <p><b>Healthy Food </b> <br>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="off3">
+                <img src="/images/deli.jpeg" style="height: 80px;width: 80px; float: left;">
+                <p><b>Fast Home Delivery </b><br>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+        <hr class="line">
+        <div class="menu">
+            <div class="tag">
+                <h2 style="background-color: rgb(48, 218, 48);">our Menu</h2>
+            </div>
+            <h2>Explore Our Menu</h2>
+            <div class="grid">
+                <div class="item1">
+                    <img src="/images/grill8.jpeg" class="grid_img">
+                </div>
+                <div class="item2">
+                    <img src="/images/grill10.webp" class="grid_img">
+                </div>
+                <div class="item3">
+                    <img src="/images/grill3.jpeg" class="grid_img">
+                </div>
+                <div class="item4">
+                    <img src="/images/Restaurant/grill4.jpeg" class="grid_img">
+                </div>
+                <div class="item5">
+                    <img src="/images/grill5.jpeg" class="grid_img">
+                </div>
+                <div class="item6">
+                    <img src="/images/grill6.webp" class="grid_img">
+                </div>
+                <div class="item7">
+                    <img src="/images/grill11.jpeg" class="grid_img">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="sect4">
+        <div class="p1">
+            <img src="/images//hotgrilllogo1.jpeg" class="ima">
+
+        </div>
+        <div class="p2" style="margin-top: 30px;">
+            <h4>main Link</h4>
+            <p>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. ?</p>
+        </div>
+        <div class="p3" style="margin-top: 30px;">
+            <h4>Support</h4>
+            <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit. !</p>
+        </div>
+        <div class="p4" style="margin-top: 30px;">
+            <h5>Join Our NewsLetter</h5>
+            <input type="email" placeholder="Enter Your email"><br><br>Follow Us<br>
+                <i class="fa fa-facebook-f" style="font-size:14px; padding-right: 30px;color: white;"></i></a>
+                <i class="fa fa-twitter" style="font-size:14px ;padding-right: 30px;color:white;"></i></a>
+                <i class="fa fa-google" style="font-size:14px; padding-right: 30px;color: white;"></i></a>
+            </div>
+        </div>
+</body>
+
+</html>
