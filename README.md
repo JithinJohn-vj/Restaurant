@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 ## overview
 - Framework - [Next.js 14](https://nextjs.org/13)
@@ -14,3 +15,6 @@
 - Pre-commit Hooks - [Husky](https://typicode.github.io/husky/)
 - Formatting - [Prettier](https://prettier.io)
 
+=======
+# Restaurant
+>>>>>>> a1f2fd6c06e720d730bbefdb5499c3493f5dcdee
